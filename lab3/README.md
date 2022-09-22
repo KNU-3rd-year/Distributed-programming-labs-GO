@@ -1,7 +1,7 @@
 # Lab 3
 **Topic**: Binary semaphores: Protecting shared memory access
 
-## Part 3:
+## Part 1:
 ### Task:
 **Topic:**
 Implement using Golang
