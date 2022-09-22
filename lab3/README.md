@@ -1,6 +1,9 @@
 # Lab 3
 **Topic**: Binary semaphores: Protecting shared memory access
 
+## Video solution:
+You can find a [short video](Lab%203%20solution%20video%20DP.mp4) about this lab!
+
 ## Part 1:
 ### Task:
 **Topic:**
