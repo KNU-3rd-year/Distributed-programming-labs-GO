@@ -55,7 +55,7 @@ func fill(ch chan int) {
 
 func awakeAndEat(ch chan int) {
 	close(ch)
-	fmt.Printf("Jug is full %v\n", len(ch))
+	fmt.Printf("Jar is full %v\n", len(ch))
 	fmt.Println("Bear awake")
 	fmt.Printf("Bear is eating honey...\n")
 }
