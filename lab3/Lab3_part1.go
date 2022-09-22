@@ -48,7 +48,7 @@ func fill(ch chan int) {
 	case ch <- len(ch):
 		fmt.Printf("Filling the jar (%v/%v)\n", len(ch), jarCapacity)
 	default:
-		counter.Increment()
+		counter.incrementCounter()
 		awakeAndEat(ch)
 	}
 }
@@ -60,16 +60,10 @@ func awakeAndEat(ch chan int) {
 	fmt.Printf("Bear is eating honey...\n")
 }
 
-func (c *Counter) Increment() {
+func (c *Counter) incrementCounter() {
 	c.Lock()
 	defer c.Unlock()
 	c.count++
-}
-
-func (c *Counter) Decrement() {
-	c.Lock()
-	defer c.Unlock()
-	c.count--
 }
 
 func (c *Counter) getCounter() int {
